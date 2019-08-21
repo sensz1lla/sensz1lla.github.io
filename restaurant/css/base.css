@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  background: url("../img/header-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+header .navbar .navbar-header .navbar-toggle {
+  margin: 10px 0 0 0;
+}
+
+header .navbar .navbar-header .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+  width: 30px;
+  height: 3px;
+  padding-bottom: 4px;
+}
+
+header .navbar .navbar-header .navbar-brand {
+  padding: 10px 15px;
+}
+
+header .navbar .navbar-header .navbar-brand .logo {
+  width: 100%;
+}
+
+header .navbar .navbar-collapse .nav .paddin {
+  padding-left: 45px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+header .navbar .navbar-collapse .nav .paddin__social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 35px;
+}
+
+header .navbar .navbar-collapse .nav .paddin__social-link a {
+  color: #dab33e;
+  font-size: 21px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navbar .navbar-collapse .nav .paddin__social-link a:hover {
+  color: #dad837;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navbar .navbar-collapse .nav .paddin .menu-link {
+  padding: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navbar .navbar-collapse .nav .paddin .menu-link:hover {
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navbar .navbar-collapse .nav .paddin .menu-link::before {
+  content: '';
+  display: block;
+  background-color: #ffffff;
+  opacity: 1;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -51px;
+  bottom: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navbar .navbar-collapse .nav .paddin .menu-link:hover::before {
+  height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .main-title {
+  margin-top: 130px;
+}
+
+header .main-title h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
+  opacity: 0.92;
+  text-align: center;
+}
+
+header .main-ellipse {
+  margin-top: 25px;
+}
+
+header .main-ellipse__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+header .buttons-group {
+  text-align: center;
+  margin-top: 44px;
+}
+
+header .buttons-group .btn {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 12px 30px;
+}
+
+header .buttons-group .btn.btn-black {
+  border: 1px solid #000000;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+header .buttons-group .btn.btn-black:hover {
+  background-color: #000000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .buttons-group .btn.btn-white {
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-left: 15px;
+}
+
+header .buttons-group .btn.btn-white:hover {
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.block-about {
+  background: url("../img/section_1-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 710px;
+  width: 100%;
+  padding: 105px 0;
+  text-align: center;
+}
+
+.block-about__title {
+  color: #cc9900;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.block-about__icon {
+  margin-bottom: 30px;
+}
+
+.block-about__text {
+  color: #4c4c4c;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.block-about__cook {
+  margin-top: 52px;
+}
+
+.block-about__dish {
+  width: 100%;
+}
+
+.block-igredients {
+  background: url("../img/section_2-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 778px;
+  width: 100%;
+  padding: 105px 0;
+  text-align: center;
+}
+
+.block-igredients__wrapper {
+  border: 1px solid #fbf7c0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 80px;
+}
+
+.block-igredients__title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.block-igredients__icon {
+  margin-bottom: 30px;
+}
+
+.block-igredients__text {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.block-igredients__ellipse {
+  margin-top: 30px;
+}
+
+.block-igredients__ellipse img {
+  width: 100%;
+}
+
+.block-menu {
+  background: url("../img/section_3-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 1380px;
+  width: 100%;
+  padding: 105px 0;
+  text-align: center;
+}
+
+.block-menu .menu-items {
+  margin-bottom: 160px;
+}
+
+.block-menu .menu-items:last-child {
+  margin-bottom: 0;
+}
+
+.block-menu .menu-items__title {
+  color: #cc9900;
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.block-menu .menu-items__icon {
+  margin-bottom: 20px;
+}
+
+.block-menu .menu-items__item {
+  margin-bottom: 38px;
+}
+
+.block-menu .menu-items__item:last-child {
+  margin-bottom: 0;
+}
+
+.block-menu .menu-items__item .price {
+  border-bottom: 1px solid #c89f2d;
+  padding-bottom: 12px;
+  overflow: hidden;
+}
+
+.block-menu .menu-items__item .price__name {
+  color: #c89f2d;
+  font-size: 21px;
+  font-weight: 400;
+  float: left;
+}
+
+.block-menu .menu-items__item .price__cost {
+  color: #c89f2d;
+  font-size: 24px;
+  font-weight: 400;
+  float: right;
+}
+
+.block-menu .menu-items__item .desc {
+  color: #4c4c4c;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.block-reviews {
+  background: url("../img/section_4-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 773px;
+  width: 100%;
+  padding: 105px 0;
+  text-align: center;
+}
+
+.block-reviews__wrapper {
+  max-width: 770px;
+  margin: 0 auto;
+  border: 1px solid #fbf7c0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 100px 80px;
+}
+
+.block-reviews__title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.block-reviews__icon {
+  margin-bottom: 30px;
+}
+
+.block-reviews__text {
+  color: #dde0df;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.block-reservations {
+  background: url("../img/section_1-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 739px;
+  width: 100%;
+  padding: 105px 0;
+  text-align: center;
+}
+
+.block-reservations__images img {
+  margin-bottom: 15px;
+}
+
+.block-reservations__title {
+  color: #cc9900;
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.block-reservations__icon {
+  margin-bottom: 30px;
+}
+
+.block-reservations__text {
+  color: #4c4c4c;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.block-reservations__form {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.block-reservations__form .form-group {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  margin-right: 30px;
+}
+
+.block-reservations__form .form-group label {
+  color: #c9a131;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.block-reservations__form .form-group input {
+  display: block;
+  padding: 6px;
+  border: 1px solid #c8c6c6;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #7c7c7c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.block-reservations__form .btn-group .btn {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 12px 30px;
+}
+
+.block-reservations__form .btn-group .btn.btn-orange {
+  background-color: #c89f2d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.block-reservations__form .btn-group .btn.btn-orange:hover {
+  background-color: #C8AC5D;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  background: #191919;
+  padding: 52px 0;
+  text-align: center;
+}
+
+footer .footer-item__title {
+  color: #fefefe;
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+footer .footer-item__icon {
+  margin-bottom: 15px;
+}
+
+footer .footer-item__desc {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+footer .footer-item__card {
+  margin-top: 15px;
+}
+
+footer .footer-item__card .fa {
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 8px;
+}
+/*# sourceMappingURL=base.css.map */
